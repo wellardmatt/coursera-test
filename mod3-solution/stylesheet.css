@@ -1,65 +1,69 @@
 * {
 	box-sizing: border-box;
 	margin: 0px;
-	background-color: #f97a7e;
 }
 body{
 	font-family: 'Karla', sans-serif;
-	background-color: #f97a7e;
 	font-size: 1em;
+	background-color: #f97a7e;
 }
 body h1{
 	font-family: 'Inconsolata', monospace;
 	text-align: left;
-	font-size: 2em;
+	font-size: 1.75em;
 }
-body h2{
+body>h2{
 	font-size: 3.5em;
 	font-weight: bold;
 	color: black;
+	text-align: center;
+	padding: 10px 0px 20px;
+	margin: 0px;
 }
 h1 {
 	text-align: center;
 	font-size: 1.5em;
-	margin-bottom: 50px;
 }
 
 h2 {
 	text-align: center;
-	font-size: 1.25em;
+	font-size: 2.5em;
+	font-weight: bold;
 }
 
 /** Header **/
 header{
 	height:70px;
-	background-color: #e5de14;
 	margin:0;
+	background: none;
 }
 .container-fluid{
 	height:100%;
 	background-color: #e5de14;
+	border-bottom: solid 3px black;
+	border-top: solid 3px black;
 }
 #header-nav{
 	border-radius:0;
 	height: 70px;
-	border-bottom: solid 3px black;
-	border-top: solid 3px black;
-	border-left: 0;
-	border-right: 0;
-	background-color: #e5de14;
+	border: 0;
 	margin: 0;
+	background: transparent;
+}
+.navbar-header{
+	height:100%;
 }
 .navbar-brand{
 	height: 100%;
-	background-color: #e5de14;
+	background: transparent;
 }
 .navbar-brand>#company{
 	height:100%;
 	color: #01298e;
 	font-weight: bold;
-	background-color: #e5de14;
 	margin:0;
 	padding-top: 0;
+	background: transparent;
 }
 .container-fluid .navbar-toggle{
 	border-color: #f97a7e;
@@ -70,15 +74,23 @@ header{
 }
 #nav-list{
 	margin-top: 0px;
+	margin-bottom: -8px;
 }
 #nav-list a{
 	color: #f97a7e;
-	text-align: centre;
+	text-align: center;
 }
 #nav-list a:hover{
 	background: #E7E7E7;
 }
 /** Main Content **/
+#main-content{
+	clear: both;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	padding:0;
+}
 .box {
 	border: solid 0px;
 	position relative;
@@ -200,6 +212,37 @@ header{
 }
 
 @media (max-width: 767px){
+	#collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    color: #f97a7e;
+    font-size: 2em;
+    font-weight: bold;
+    padding:10px;
+  }
+  #collapsable-nav{
+  	border: solid black;
+  	border-width: 0px 3px 3px 3px;
+  	width: 100%;
+  	margin:0;
+  	background-color: #b5faff;
+  	padding-top: 10px;
+  	padding-bottom: -10px;
+  }
+  .icon-bar2 {
+  display: block;
+  height: 2px;
+  border-radius: 5px;
+  width: 95%;
+  margin-left: 2.5%;
+
+}
+.icon-bar2 {
+  margin-top: 0;
+  background-color: #888;
+}
+li{
+	padding-bottom: 10px;
+}
 	.col-sm-1 {
     width: 8.33%;
   }
