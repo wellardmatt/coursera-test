@@ -74,7 +74,7 @@ header{
 }
 #nav-list{
 	margin-top: 0px;
-	margin-bottom: -8px;
+	margin-bottom: 0px;
 }
 #nav-list a{
 	color: #f97a7e;
@@ -225,7 +225,6 @@ header{
   	width: 100%;
   	margin:0;
   	background-color: #b5faff;
-  	padding-top: 10px;
   	padding-bottom: -10px;
   }
   .icon-bar2 {
@@ -241,7 +240,7 @@ header{
   background-color: #888;
 }
 li{
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 }
 	.col-sm-1 {
     width: 8.33%;
