@@ -108,6 +108,7 @@ header{
 	border: solid 0px;
 	width: 100%;
 	background-color: #a8c0ff;
+	font-weight: bold;
 }
 .text{
 	clear: right;
